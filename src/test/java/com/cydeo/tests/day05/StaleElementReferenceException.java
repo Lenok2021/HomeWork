@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class StaleElementReferenceException {
+public class StaleElementReferenceException extends Throwable {
     public static void main(String[] args) {
 
 /*
@@ -46,11 +46,20 @@ USE XPATH LOCATOR FOR ALL WEBELEMENT LOCATORS
         deleteButton.click();
 
         //6. Verify “Delete” button is NOT displayed after clicking.
-        System.out.println(deleteButton.isDisplayed());
 
-        //we will get (StaleElementReferenceException.java:49)
-        driver.close();
+            System.out.println(deleteButton.isDisplayed());
+
+                    }
 
 
     }
-}
+
+
+
+
+        //we will get (StaleElementReferenceException.java:49)
+      //  driver.close();
+
+
+
+
