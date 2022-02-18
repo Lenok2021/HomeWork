@@ -44,6 +44,6 @@ USE XPATH LOCATOR FOR ALL WEBELEMENT LOCATORS
         System.out.println(green.isSelected());
         System.out.println(green.isEnabled());
 
-        driver.close();
+       // driver.close();
     }
 }
